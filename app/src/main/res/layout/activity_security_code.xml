@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    tools:context=".security_code">
+
+
+
+
+
+
+
+
+
+
+    <com.github.florent37.shapeofview.shapes.ArcView
+        android:id="@+id/mHeader_menu"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_arc_height="20dp"
+        app:shape_arc_position="bottom">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_header">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                fontPath="fonts/titr.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="در شهر"
+                android:textColor="@color/White"
+                android:layout_marginTop="10dp"
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                fontPath="fonts/IRANSansMobile.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="چه خبر است"
+                android:textColor="@color/White"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:ignore="MissingPrefix" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.github.florent37.shapeofview.shapes.ArcView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/mHeader_menu">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_blue_rounded">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout_one"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColorHint="@color/Text_color"
+                app:hintEnabled="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mEdit_txt_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:digits="1 2 3 4 5 6 7 8 9 0"
+                    android:gravity="right"
+                    android:hint="کد امنیتی"
+                    android:maxLength="15"
+                    android:textColor="@color/Text_color"
+                    android:textSize="@dimen/Size_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="50dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Dark_blue">
+
+
+            <Button
+                android:id="@+id/mBtn_login_security_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="60dp"
+                android:background="@drawable/bg_white_rounded"
+                android:text="ورود"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mPic_register"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/mPic_register"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/icon_login"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--
+
+            <org.technocell.organdoner.info.hoang8f.widget.FButton
+                android:id="@+id/FButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                fbutton:buttonColor="@color/White"
+                fbutton:cornerRadius="50dp"
+                fbutton:shadowHeight="5dp"
+
+                android:layout_marginEnd="70dp"
+                fbutton:shadowColor="@color/Red"
+                fbutton:shadowEnabled="true"
+                android:text="ورود"
+                android:textColor="@color/Text_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/mPic_register"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/fancyButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        fancy:fb_borderColor="@color/cream"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/cream"
+        fancy:fb_radius="50dp"
+        fancy:fb_text="">
+
+        <ImageView
+            android:id="@+id/resendbtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/again"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/CountDown"
+            fontPath="fonts/vazir.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/Text_color"
+            android:textSize="18sp"
+            tools:ignore="MissingPrefix" />
+    </mehdi.sakout.fancybuttons.FancyButton>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/again"
+ />
+</androidx.constraintlayout.widget.ConstraintLayout>

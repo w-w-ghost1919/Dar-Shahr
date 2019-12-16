@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Job_marker">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/blue_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+           android:id="@+id/mJob_marker_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="نشانگر مشاغل"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/mJob_marker_back"
+            android:layout_width="@dimen/Size_pic"
+            android:layout_height="@dimen/Size_pic"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/mJob_marker_pic_name"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mJob_marker_pic_name"
+        app:layout_constraintEnd_toStartOf="@+id/mJob_marker_pic_name"
+        app:layout_constraintTop_toTopOf="@+id/mJob_marker_pic_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mJob_marker_txt_l_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="نام"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Dark_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <ImageView
+        android:id="@+id/mJob_marker_pic_fname"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:src="@drawable/icon_name"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/mJob_marker_pic_name"
+        app:layout_constraintStart_toStartOf="@+id/mJob_marker_pic_name"
+        app:layout_constraintTop_toBottomOf="@+id/mJob_marker_pic_name" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mJob_marker_pic_fname"
+        app:layout_constraintEnd_toStartOf="@+id/mJob_marker_pic_fname"
+        app:layout_constraintTop_toTopOf="@+id/mJob_marker_pic_fname">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mJob_marker_txt_f_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="نام خانوادگی"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Dark_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />
+
+    <ImageView
+        android:id="@+id/mJob_marker_pic_job"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:src="@drawable/icon_name_job"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/mJob_marker_pic_fname"
+        app:layout_constraintStart_toStartOf="@+id/mJob_marker_pic_fname"
+        app:layout_constraintTop_toBottomOf="@+id/mJob_marker_pic_fname" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mJob_marker_pic_job"
+        app:layout_constraintEnd_toStartOf="@+id/mJob_marker_pic_job"
+        app:layout_constraintTop_toTopOf="@+id/mJob_marker_pic_job">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mJob_marker_txt_name_job"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="نام شغل"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+   
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Dark_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    <ImageView
+        android:id="@+id/mJob_marker_pic_phone"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:src="@drawable/icon_phone"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/mJob_marker_pic_job"
+        app:layout_constraintStart_toStartOf="@+id/mJob_marker_pic_job"
+        app:layout_constraintTop_toBottomOf="@+id/mJob_marker_pic_job" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mJob_marker_pic_phone"
+        app:layout_constraintEnd_toStartOf="@+id/mJob_marker_pic_phone"
+        app:layout_constraintTop_toTopOf="@+id/mJob_marker_pic_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mJob_marker_txt_phonr_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="شماره تماس"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/Dark_blue"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+    <ImageView
+        android:id="@+id/mJob_marker_pic_reagent_code"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:src="@drawable/icon_reagent_code"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/mJob_marker_pic_phone"
+        app:layout_constraintStart_toStartOf="@+id/mJob_marker_pic_phone"
+        app:layout_constraintTop_toBottomOf="@+id/mJob_marker_pic_phone" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/mJob_marker_pic_reagent_code"
+        app:layout_constraintEnd_toStartOf="@+id/mJob_marker_pic_reagent_code"
+        app:layout_constraintTop_toTopOf="@+id/mJob_marker_pic_reagent_code">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mJob_marker_txt_reagent_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="کد معرف"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/Dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <Button
+        android:id="@+id/mContinuation_job"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_dark_blue_rounded"
+        android:text="ادامه"
+        android:textColor="@color/White"
+        android:textSize="@dimen/Size_text_two"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

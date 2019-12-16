@@ -1,0 +1,14 @@
+package org.technocell.dar_shahr;
+
+import android.app.Application;
+
+import ir.map.sdk_map.Mapir;
+
+public class AppController extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        //TODO Please add your ACCESS_TOKEN
+        Mapir.getInstance(this, "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJkNjE1ZjM3Y2Y5MjM5ZDQ2ZWEzMzY4MTRjYTFmZDllNjkzNzRhNDU1ZWZiMGE4NDEwODEzOGM3MDNkNmUyZmZlMmNiMmFkNDAwZDFlM2FiIn0.eyJhdWQiOiI2OTQwIiwianRpIjoiMmQ2MTVmMzdjZjkyMzlkNDZlYTMzNjgxNGNhMWZkOWU2OTM3NGE0NTVlZmIwYTg0MTA4MTM4YzcwM2Q2ZTJmZmUyY2IyYWQ0MDBkMWUzYWIiLCJpYXQiOjE1NzU3MjIxODQsIm5iZiI6MTU3NTcyMjE4NCwiZXhwIjoxNTc4MjI3Nzg0LCJzdWIiOiIiLCJzY29wZXMiOlsiYmFzaWMiXX0.dUuo35rbr58vW9dBm1Ie4QjbrdtYsSitlvX1-RjBSUCmCifvro2p8tgLgLDqRdJcVluUpjNralaKp8PzpIpwzBEGzCNDWsbJoOHkqpEGfxZDCNJn_HjIme5XesvEp5bkTFNkK-VuxsKuVjdJwA0VMDBM42Xvq1WQrp_neW4aiqjXRMBkfN50t4nCKvdPDV0ytaP7rc2XKGoAOFTylKd49AK4VIaERqIZb5gX108XSawl2j64DsBHg0hQIk3LFQlmVsbR4hUdmEd48twzy9SBWbzHqd6I1_P2iOaL9dLS3jI1ZRwAKDNr6MH-2DirYhMJYxdQVRsA17MbjnoEOPeZIQ");
+    }
+}

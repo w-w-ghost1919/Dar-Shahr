@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Light_blue">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/mBg_menu"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_buttom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/mIc_supporters_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/supporters"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mIc_discount_menu"
+            app:layout_constraintEnd_toStartOf="@+id/mIc_discount_menu"
+            app:layout_constraintTop_toTopOf="@+id/mIc_discount_menu" />
+
+        <TextView
+            android:id="@+id/mTxt_supporters_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="حامیان"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="@+id/mIc_supporters_menu"
+            app:layout_constraintStart_toStartOf="@+id/mIc_supporters_menu"
+            app:layout_constraintTop_toBottomOf="@+id/mIc_supporters_menu" />
+
+
+        <ImageView
+            android:id="@+id/mIc_discount_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="50dp"
+            android:src="@drawable/discount"
+            app:layout_constraintBottom_toBottomOf="@+id/mIc_grouping_menu"
+            app:layout_constraintEnd_toStartOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintTop_toTopOf="@+id/mIc_grouping_menu" />
+
+        <TextView
+            android:id="@+id/mTxt_discount_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="تخفیفات"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="@+id/mIc_discount_menu"
+            app:layout_constraintStart_toStartOf="@+id/mIc_discount_menu"
+            app:layout_constraintTop_toBottomOf="@+id/mIc_discount_menu" />
+
+
+        <ImageView
+            android:id="@+id/mIc_place_registration_menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/place_registration"
+            android:layout_marginBottom="60dp"
+            android:layout_marginStart="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mBg_menu"
+            app:layout_constraintEnd_toEndOf="@+id/mBg_menu"
+            app:layout_constraintStart_toStartOf="@+id/mBg_menu"
+            app:layout_constraintTop_toTopOf="@+id/mBg_menu" />
+
+        <TextView
+            android:id="@+id/mTxt_place_registration_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="ثبت مکان من"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintStart_toStartOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintTop_toBottomOf="@+id/mIc_place_registration_menu" />
+
+
+        <ImageView
+            android:id="@+id/mIc_grouping_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/grouping"
+            app:layout_constraintBottom_toBottomOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintStart_toEndOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintTop_toTopOf="@+id/mIc_place_registration_menu"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/mTxt_grouping_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="دسته بندی"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="@+id/mIc_grouping_menu"
+            app:layout_constraintStart_toStartOf="@+id/mIc_grouping_menu"
+            app:layout_constraintTop_toBottomOf="@+id/mIc_grouping_menu" />
+
+
+        <ImageView
+            android:id="@+id/mIc_video_menu"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/video"
+            app:layout_constraintBottom_toBottomOf="@+id/mIc_grouping_menu"
+            app:layout_constraintStart_toEndOf="@+id/mIc_grouping_menu"
+            app:layout_constraintTop_toTopOf="@+id/mIc_grouping_menu" />
+
+
+        <TextView
+            android:id="@+id/mTxt_video_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="ویدیو ها"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="@+id/mIc_video_menu"
+            app:layout_constraintStart_toStartOf="@+id/mIc_video_menu"
+            app:layout_constraintTop_toBottomOf="@+id/mIc_video_menu" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

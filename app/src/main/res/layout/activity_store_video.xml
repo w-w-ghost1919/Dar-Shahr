@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store_video">
+
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/blue_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ویدئو"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:id="@+id/mDescription_store"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/frame_blue"
+        android:gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="220dp"
+        android:hint="عنوان"
+        android:padding="15dp"
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
+        android:textSize="@dimen/Size_text_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <EditText
+        android:id="@+id/mSearch_header"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/frame_blue"
+        android:gravity="start"
+        android:hint="توضیحات"
+        android:padding="15dp"
+        android:textColor="@color/Text_color"
+        android:textColorHint="@color/Text_color"
+        android:textSize="@dimen/Size_text_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mDescription_store" />
+
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/roundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:buttonCornerRadius="100dp"
+        android:gravity="center"
+        android:text="تایید و پرداخت"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:buttonCornerRadius="0dp"
+        app:buttonGradientEndColor="#38c219"
+        app:buttonGradientStartColor="#38c219"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

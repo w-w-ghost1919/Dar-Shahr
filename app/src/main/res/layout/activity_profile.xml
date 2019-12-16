@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/blue_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:text="پروفایل"
+            android:textColor="@color/White"
+            android:textSize="@dimen/Size_text_two"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/ProfileBackBtn"
+            android:layout_width="@dimen/Size_pic"
+            android:layout_height="@dimen/Size_pic"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/icon_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/icon_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/NameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="نام"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/Dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_name"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SurnameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="نام خانوادگی"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/Dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="@dimen/Size_pic"
+        android:layout_height="@dimen/Size_pic"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_name_job"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:gravity="right"
+        android:textColorHint="@color/Text_color"
+        app:hintEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/JobInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="شغل"
+            android:maxLength="30"
+            android:textColor="@color/Light_blue"
+            android:textSize="@dimen/Size_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/Dark_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+
+    \\\\\\\
+
+    <!--
+
+    <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+        android:id="@+id/customToggleButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:textOff="ویدیو ها"
+        android:textOn="ویدیو ها"
+        app:borderWidth="2dp"
+        app:checkedColor="#003399"
+        app:checkedTextColor="@color/White"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4"
+        app:radius="50dp"
+        app:uncheckedColor="#003399"
+        app:uncheckedTextColor="#6666cc">
+
+
+    </me.rishabhkhanna.customtogglebutton.CustomToggleButton>
+
+
+   \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+        android:id="@+id/customToggleButton3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textOff="تخفیفات"
+        android:textOn="تخفیفات"
+        app:borderWidth="2dp"
+        app:checkedColor="#003399"
+        app:checkedTextColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="@+id/customToggleButton"
+        app:layout_constraintStart_toEndOf="@+id/customToggleButton"
+        app:layout_constraintTop_toTopOf="@+id/customToggleButton"
+        app:radius="50dp"
+        app:uncheckedColor="#003399"
+        app:uncheckedTextColor="#6666cc">
+
+
+    </me.rishabhkhanna.customtogglebutton.CustomToggleButton>
+
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+        android:id="@+id/customToggleButton4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:textOff="استوری ها"
+        android:textOn="استوری ها"
+        app:borderWidth="2dp"
+        app:checkedColor="#003399"
+        app:checkedTextColor="@color/White"
+        app:layout_constraintBottom_toBottomOf="@+id/customToggleButton3"
+        app:layout_constraintStart_toEndOf="@+id/customToggleButton3"
+        app:layout_constraintTop_toTopOf="@+id/customToggleButton3"
+        app:radius="50dp"
+        app:uncheckedColor="#003399"
+        app:uncheckedTextColor="#6666cc">
+
+
+    </me.rishabhkhanna.customtogglebutton.CustomToggleButton>
+
+
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    -->
+
+
+    \\\\\\
+
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/mBtn_video_pro"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:buttonCornerRadius="100dp"
+        android:gravity="center"
+        android:text="ویدئو ها"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:buttonCornerRadius="60dp"
+        app:buttonGradientEndColor="@color/Dark_blue"
+        app:buttonGradientStartColor="@color/Light_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/mBtn_discount_pro"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:buttonCornerRadius="100dp"
+        android:gravity="center"
+        android:text="تخفیفات"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:buttonCornerRadius="60dp"
+        app:buttonGradientEndColor="@color/Dark_blue"
+        app:buttonGradientStartColor="@color/Light_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/mBtn_video_pro"
+        app:layout_constraintStart_toEndOf="@+id/mBtn_video_pro"
+        app:layout_constraintTop_toTopOf="@+id/mBtn_video_pro" />
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/mBtn_story_pro"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="10dp"
+        android:buttonCornerRadius="100dp"
+        android:gravity="center"
+        android:text="استوری ها"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:buttonCornerRadius="60dp"
+        app:buttonGradientEndColor="@color/Dark_blue"
+        app:buttonGradientStartColor="@color/Light_blue"
+        app:layout_constraintBottom_toBottomOf="@+id/mBtn_discount_pro"
+        app:layout_constraintStart_toEndOf="@+id/mBtn_discount_pro"
+        app:layout_constraintTop_toTopOf="@+id/mBtn_discount_pro" />
+
+
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/roundedButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:buttonCornerRadius="100dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="ادامه"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:buttonCornerRadius="30dp"
+        app:buttonGradientEndColor="@color/Dark_blue"
+        app:buttonGradientStartColor="@color/Dark_blue"
+        app:layout_constraintEnd_toEndOf="@+id/mBtn_discount_pro"
+        app:layout_constraintStart_toStartOf="@+id/mBtn_discount_pro"
+        app:layout_constraintTop_toBottomOf="@+id/mBtn_discount_pro" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

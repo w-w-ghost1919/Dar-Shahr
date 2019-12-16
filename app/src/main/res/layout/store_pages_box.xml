@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_two"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_gradient_blue_rounded">
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/mBtn_box_discount"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:textColor="@color/White"
+                android:textSize="@dimen/Size_text"
+                android:shadowRadius="@null"
+                android:text="تخفیفات"
+                android:textColorHint="@color/Text_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mBtn_box_discount"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+            <Button
+                android:id="@+id/mBtn_box_story"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:shadowRadius="@null"
+                android:text="استوری ها"
+                android:textColor="@color/White"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mBtn_box_story"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+            <Button
+                android:id="@+id/mBtn_box_video"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:shadowRadius="@null"
+                android:text="ویدیو ها"
+                android:textColor="@color/White"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/White"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/mBtn_box_video"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+
+
+
+            <Button
+                android:id="@+id/mBtn_box_main_page"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:shadowRadius="@null"
+                android:text="صفحه اصلی"
+                android:textColor="@color/White"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

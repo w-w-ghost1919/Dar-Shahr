@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".store_registration">
+
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="140dp"
+>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView_two">
+
+                <ImageView
+                    android:id="@+id/Pic_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/addpic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Pic_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تصویر خود را اضافه کنید"
+                    android:textColor="@color/Text_color"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/Pic_1"
+                    app:layout_constraintStart_toStartOf="@+id/Pic_1"
+                    app:layout_constraintTop_toBottomOf="@+id/Pic_1" />
+
+                <ImageView
+                    android:id="@+id/Pic_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/addpic"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Pic_1"
+                    app:layout_constraintStart_toEndOf="@+id/Pic_3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Pic_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="تصویر خود را اضافه کنید"
+                    android:textColor="@color/Text_color"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/Pic_2"
+                    app:layout_constraintStart_toStartOf="@+id/Pic_2"
+                    app:layout_constraintTop_toBottomOf="@+id/Pic_2" />
+                <ImageView
+                    android:id="@+id/Pic_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/addpic"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Pic_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:text="تصویر خود را اضافه کنید"
+                    android:textColor="@color/Text_color"
+                    android:textSize="10dp"
+                    app:layout_constraintEnd_toEndOf="@+id/Pic_3"
+                    app:layout_constraintStart_toStartOf="@+id/Pic_3"
+                    app:layout_constraintTop_toBottomOf="@+id/Pic_3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/PicConst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <ImageView
+                    android:id="@+id/Pic_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/addpic"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Pic_4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تصویر خود را اضافه کنید"
+                    android:textColor="@color/Text_color"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/Pic_4"
+                    app:layout_constraintStart_toStartOf="@+id/Pic_4"
+                    app:layout_constraintTop_toBottomOf="@+id/Pic_4" />
+
+                <ImageView
+                    android:id="@+id/Pic_5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="70dp"
+                    android:src="@drawable/addpic"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/Pic_4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/Pic_5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تصویر خود را اضافه کنید"
+                    android:textColor="@color/Text_color"
+                    android:textSize="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/Pic_5"
+                    app:layout_constraintStart_toStartOf="@+id/Pic_5"
+                    app:layout_constraintTop_toBottomOf="@+id/Pic_5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_two"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="60dp"
+                app:cardElevation="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_gradient_blue_rounded">
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/mBtn_box_discount"
+                        android:layout_width="85dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/Size_text"
+                        android:shadowRadius="@null"
+                        android:text="تخفیفات"
+                        android:textColorHint="@color/Text_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mBtn_box_discount"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    <Button
+                        android:id="@+id/mBtn_box_story"
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:shadowRadius="@null"
+                        android:text="استوری ها"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/Text_color"
+                        android:textSize="@dimen/Size_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/view1"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mBtn_box_story"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    <Button
+                        android:id="@+id/mBtn_box_video"
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:shadowRadius="@null"
+                        android:text="ویدیو ها"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/Text_color"
+                        android:textSize="@dimen/Size_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/view2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <View
+                        android:id="@+id/view3"
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/White"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/mBtn_box_video"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                    <Button
+                        android:id="@+id/mBtn_box_main_page"
+                        android:layout_width="86dp"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:shadowRadius="@null"
+                        android:text="صفحه اصلی"
+                        android:textColor="@color/White"
+                        android:textColorHint="@color/Text_color"
+                        android:textSize="@dimen/Size_text"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/view3"
+                        app:layout_constraintTop_toTopOf="parent" />
+    
+
+
+
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/mEdit_txt_explain_store_reg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/frame_blue"
+                android:gravity="start"
+                android:hint="توضیحات"
+                android:padding="15dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/Text_color"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PicConst2" />
+
+
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+            <EditText
+                android:id="@+id/mEdit_txt_phone_number_store_reg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/frame_blue"
+                android:gravity="start"
+                android:hint="شماره تماس"
+                android:padding="15dp"
+                android:textColor="@color/Text_color"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintEnd_toEndOf="@+id/mEdit_txt_explain_store_reg"
+                app:layout_constraintStart_toStartOf="@+id/mEdit_txt_explain_store_reg"
+                app:layout_constraintTop_toBottomOf="@+id/mEdit_txt_explain_store_reg" />
+
+
+            \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+            <TextView
+                android:id="@+id/mEdit_txt_Cyberspace_store_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:text="فضای مجازی"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mEdit_txt_phone_number_store_reg" />
+
+
+            <EditText
+                android:id="@+id/mEdit_txt_Cyberspace_instagram_store_reg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/frame_blue"
+                android:gravity="start"
+                android:hint="اینستاگرام"
+                android:maxLength="20"
+                android:padding="15dp"
+                android:textColor="@color/Text_color"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintEnd_toEndOf="@+id/mEdit_txt_phone_number_store_reg"
+                app:layout_constraintStart_toStartOf="@+id/mEdit_txt_phone_number_store_reg"
+                app:layout_constraintTop_toBottomOf="@+id/mEdit_txt_Cyberspace_store_reg" />
+
+            <EditText
+                android:id="@+id/mEdit_txt_Cyberspace_telgram_store_reg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/frame_blue"
+                android:gravity="start"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="تلگرام"
+                android:maxLength="20"
+                android:padding="15dp"
+                android:textColor="@color/Text_color"
+                android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text_two"
+                app:layout_constraintEnd_toEndOf="@+id/mEdit_txt_Cyberspace_instagram_store_reg"
+                app:layout_constraintStart_toStartOf="@+id/mEdit_txt_Cyberspace_instagram_store_reg"
+                app:layout_constraintTop_toBottomOf="@+id/mEdit_txt_Cyberspace_instagram_store_reg" />
+
+
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/mBtn_confirmation_store_reg"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="70dp"
+                android:layout_marginBottom="15dp"
+                android:buttonCornerRadius="100dp"
+                android:gravity="center"
+                android:text="تایید"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                app:buttonCornerRadius="30dp"
+                app:buttonGradientEndColor="@color/Dark_blue"
+                app:buttonGradientStartColor="@color/Dark_blue"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mEdit_txt_Cyberspace_telgram_store_reg"
+                app:layout_constraintStart_toStartOf="@+id/mEdit_txt_Cyberspace_telgram_store_reg"
+                app:layout_constraintTop_toBottomOf="@+id/mEdit_txt_Cyberspace_telgram_store_reg" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</FrameLayout>
