@@ -1,24 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
-    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
-    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     tools:context=".register">
-
-
-
-
-
 
 
     <com.github.florent37.shapeofview.shapes.ArcView
         android:id="@+id/mHeader_menu"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="wrap_content"
         android:elevation="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +26,11 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/blue_header">
+
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="120dp"
-                android:layout_height="120dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:src="@drawable/logo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:text="در شهر"
                 android:textColor="@color/White"
-                android:textSize="40sp"
+                android:textSize="32sp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView"
                 app:layout_constraintStart_toStartOf="@+id/imageView"
                 app:layout_constraintTop_toBottomOf="@+id/imageView"
@@ -59,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:text="چه خبر است"
                 android:textColor="@color/White"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/textView4"
                 app:layout_constraintStart_toStartOf="@+id/textView4"
@@ -80,7 +76,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/Pale_blue"
+        app:cardCornerRadius="30dp"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,17 +87,18 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/bg_blue_rounded">
+            android:background="@color/Pale_blue">
 
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_blue_rounded"
                 android:gravity="right"
                 android:textColorHint="@color/Text_color"
                 app:hintEnabled="true"
-                android:background="@drawable/bg_blue_rounded"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,9 +108,9 @@
                     android:id="@+id/NameInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@null"
                     android:gravity="right"
                     android:hint="نام"
-                    android:background="@null"
                     android:maxLength="30"
                     android:textColor="@color/Text_color"
                     android:textSize="@dimen/Size_text"
@@ -131,11 +129,12 @@
         android:id="@+id/cardView1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="50dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/Pale_blue"
+        app:cardCornerRadius="30dp"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView"
         app:layout_constraintStart_toStartOf="@+id/cardView"
@@ -150,9 +149,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout1"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:layout_margin="20dp"
                 android:gravity="right"
                 android:textColorHint="@color/Text_color"
                 app:hintEnabled="true"
@@ -183,7 +182,6 @@
     </androidx.cardview.widget.CardView>
 
 
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
@@ -192,7 +190,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/Pale_blue"
+        app:cardCornerRadius="30dp"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView1"
         app:layout_constraintStart_toStartOf="@+id/cardView1"
@@ -207,8 +206,9 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputLayout_one"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:gravity="right"
                 android:textColorHint="@color/Text_color"
                 app:hintEnabled="true"
@@ -239,7 +239,7 @@
     </androidx.cardview.widget.CardView>
 
 
-///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
 
 
     <androidx.cardview.widget.CardView
@@ -250,7 +250,8 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="@color/Pale_blue"
+        app:cardCornerRadius="30dp"
         app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView2"
         app:layout_constraintStart_toStartOf="@+id/cardView2"
@@ -281,12 +282,13 @@
                 android:id="@+id/StateInput"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/transparent"
-                android:textColor="@color/Text_color"
-                android:textSize="@dimen/Size_text"
                 android:layout_marginEnd="150dp"
+                android:layout_marginStart="20dp"
+                android:background="@android:color/transparent"
                 android:shadowRadius="@null"
+                android:textColor="@color/Text_color"
                 android:textColorHint="@color/Text_color"
+                android:textSize="@dimen/Size_text"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView2"
                 app:layout_constraintStart_toStartOf="parent"
@@ -310,10 +312,10 @@
                 android:id="@+id/imageView3"
                 android:layout_width="10dp"
                 android:layout_height="10dp"
-                android:layout_marginStart="25dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
                 android:src="@drawable/f_buttom"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/StateInput"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -374,35 +376,24 @@
             -->
 
 
-
-
-
-
-
-
-
-
-
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
 
-
-//////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////
 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView_two"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:cardCornerRadius="50dp"
-        app:cardElevation="5dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/Dark_blue"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
         app:layout_constraintEnd_toEndOf="@+id/cardView_one"
         app:layout_constraintStart_toStartOf="@+id/cardView_one"
         app:layout_constraintTop_toBottomOf="@+id/cardView_one">
@@ -411,16 +402,17 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/Dark_blue">
+            android:background="@color/Dark_blue"
+           >
 
 
             <Button
                 android:id="@+id/RegiSterBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginEnd="60dp"
                 android:background="@drawable/bg_white_rounded"
                 android:text="ثبت نام"
-                android:layout_marginEnd="60dp"
                 android:textColor="@color/Text_color"
                 android:textSize="@dimen/Size_text_two"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -428,7 +420,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingPrefix" />
-
 
 
             <ImageView
@@ -440,7 +431,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-<!--
+            <!--
             <org.technocell.dar_shahr.info.hoang8f.widget.FButton
                 android:id="@+id/FButton"
                 android:layout_width="match_parent"
@@ -461,6 +452,8 @@
 -->
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
